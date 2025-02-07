@@ -25,7 +25,7 @@ const Profile = () => {
                     return;
                 }
 
-                const response = await axios.get(`${process.env.JOB-HUNT-BACKEND-URL}/user/profile`, {
+                const response = await axios.get(`${process.env.REACT_APP_BACKEND}/user/profile`, {
                     headers: {
                         'Authorization': `Bearer ${token}` 
                     }

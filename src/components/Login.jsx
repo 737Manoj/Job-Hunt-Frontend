@@ -20,7 +20,7 @@ const Login = () => {
         e.preventDefault();
         setErrorMessage("");
         try {
-            const response = await fetch(`${process.env.JOB-HUNT-BACKEND-URL}/user/login`, {
+            const response = await fetch(`${process.env.REACT_APP_BACKEND}/user/login`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ username, password })
