@@ -25,7 +25,7 @@ const Profile = () => {
                     return;
                 }
 
-                const response = await axios.get('http://localhost:8080/user/profile', {
+                const response = await axios.get(`${process.env.JOB-HUNT-BACKEND-URL}/user/profile`, {
                     headers: {
                         'Authorization': `Bearer ${token}` 
                     }

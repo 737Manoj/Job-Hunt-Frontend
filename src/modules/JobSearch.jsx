@@ -18,7 +18,7 @@ const JobSearch = () => {
                 return;
             }
 
-            const response = await axios.get('http://localhost:8080/jobs/search', {
+            const response = await axios.get(`${process.env.JOB-HUNT-BACKEND-URL}/jobs/search`, {
                 params: { keyword },
                 headers: {
                     'Authorization': `Bearer ${token}` 

@@ -15,7 +15,7 @@ const Jobs = () => {
                     console.error('No token found in localStorage');
                     return;
                 }
-                const response = await axios.get('http://localhost:8080/jobs', {
+                const response = await axios.get(`${process.env.JOB-HUNT-BACKEND-URL}/jobs`, {
                     headers: {
                         'Authorization': `Bearer ${token}` 
                     }

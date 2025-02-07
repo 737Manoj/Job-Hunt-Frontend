@@ -21,7 +21,7 @@ const Apply = () => {
 
         try {
             const token = localStorage.getItem('token'); 
-            const response = await axios.post('http://localhost:8080/application/upload-resume', formData, {
+            const response = await axios.post(`${process.env.JOB-HUNT-BACKEND-URL}/application/upload-resume`, formData, {
                 headers: {
                     'Authorization': `Bearer ${token}`,
                     'Content-Type': 'multipart/form-data'
