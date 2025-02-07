@@ -1,16 +1,16 @@
-/* Features Section common styles */
+
 .features-section {
-    background-color: #FFFFFF; /* White background for light theme */
-    padding: 5rem 0; /* Adjusted padding */
+    background-color: #FFFFFF; 
+    padding: 5rem 0; 
     text-align: center;
   }
   
   .features-section h2 {
-    color: #4A5568; /* Text color for light theme */
+    color: #4A5568; 
   }
   
   .features-section .feature-item {
-    background-color: #FFFFFF; /* White background for feature items */
+    background-color: #FFFFFF; 
     padding: 1.5rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
@@ -18,20 +18,20 @@
   }
   
   .features-section .feature-item h3 {
-    color: #2D3748; /* Text color for feature item title */
+    color: #2D3748; 
   }
   
   .features-section .feature-item p {
-    color: #718096; /* Text color for feature item description */
+    color: #718096; 
   }
   
-  /* Dark theme styles for Features Section */
+ 
   .dark-theme .features-section {
-    background-color: #000000; /* Black background for dark theme */
+    background-color: #000000;
   }
   
   .dark-theme .features-section h2 {
-    color: #FFFFFF; /* White text color for dark theme */
+    color: #FFFFFF; 
   }
   
   .dark-theme .parent-div {
