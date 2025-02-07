@@ -28,7 +28,7 @@ const Register = () => {
         }
 
         try {
-            const response = await fetch(`${import.meta.env.REACT_APP_BACKEND}/user/register`, {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND}/user/register`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ username, password, email })
