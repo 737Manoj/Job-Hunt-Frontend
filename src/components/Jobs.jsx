@@ -15,7 +15,7 @@ const Jobs = () => {
                     console.error('No token found in localStorage');
                     return;
                 }
-                const response = await axios.get(`${import.meta.env.REACT_APP_BACKEND}/jobs`, {
+                const response = await axios.get(`${import.meta.env.VITE_BACKEND}/jobs`, {
                     headers: {
                         'Authorization': `Bearer ${token}` 
                     }
