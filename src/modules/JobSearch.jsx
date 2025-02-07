@@ -27,7 +27,6 @@ const JobSearch = () => {
             setResults(response.data);
         } catch (error) {
             setError('Error fetching search results');
-            console.error('Error:', error);
         }
     };
 

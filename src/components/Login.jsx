@@ -36,7 +36,6 @@ const Login = () => {
                 setErrorMessage(errorData.message || 'Login failed');
             }
         } catch (error) {
-            console.log(error);
             setErrorMessage("An error occurred during login. Please try again after some time.")
         }
     };

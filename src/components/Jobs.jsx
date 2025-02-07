@@ -22,7 +22,6 @@ const Jobs = () => {
                 });
                 if(response.status == 200){
                 setJobs(response.data);
-                console.log(response);
                 setLoading(false);
             }
             } catch (error) {
