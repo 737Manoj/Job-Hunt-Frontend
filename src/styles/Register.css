@@ -1,0 +1,29 @@
+.dark-theme .parentRegister {
+    background-color: black;
+}
+
+.dark-theme .registerCard{
+    background-color:#0d542b;
+    color: wheat;
+}
+
+.dark-theme .textColor {
+    color: wheat;
+}
+
+.dark-theme .registerField {
+    background-color: wheat;
+    color: black;
+}
+
+.dark-theme .registerField:hover {
+    background-color: beige;
+}
+
+.myClass {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+
+  

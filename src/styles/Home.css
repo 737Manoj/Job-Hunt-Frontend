@@ -1,0 +1,49 @@
+/* Features Section common styles */
+.features-section {
+    background-color: #FFFFFF; /* White background for light theme */
+    padding: 5rem 0; /* Adjusted padding */
+    text-align: center;
+  }
+  
+  .features-section h2 {
+    color: #4A5568; /* Text color for light theme */
+  }
+  
+  .features-section .feature-item {
+    background-color: #FFFFFF; /* White background for feature items */
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .features-section .feature-item h3 {
+    color: #2D3748; /* Text color for feature item title */
+  }
+  
+  .features-section .feature-item p {
+    color: #718096; /* Text color for feature item description */
+  }
+  
+  /* Dark theme styles for Features Section */
+  .dark-theme .features-section {
+    background-color: #000000; /* Black background for dark theme */
+  }
+  
+  .dark-theme .features-section h2 {
+    color: #FFFFFF; /* White text color for dark theme */
+  }
+  
+  .dark-theme .parent-div {
+    background-color: black;
+  }
+  
+.dark-theme .cards {
+    background-color: #0d542b;
+    color: wheat;
+}
+
+.dark-theme .textStyle {
+    color: wheat;
+}
+  

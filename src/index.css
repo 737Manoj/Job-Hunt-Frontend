@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import "./styles/Home.css";
+@import "./styles/Login.css";
+@import "./styles/Register.css";
+@import "./styles/Profile.css";
+@import "./styles/JobSearch.css";
+@import "./styles/Jobs.css";
+@import "./styles/Apply.css";
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+#root {
+    height: 100%;
+}
+
+
+
+ 
+

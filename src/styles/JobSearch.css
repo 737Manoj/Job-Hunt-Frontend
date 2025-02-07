@@ -1,0 +1,21 @@
+.dark-theme .parentCard {
+    background-color: black;
+}
+
+.dark-theme .searchCard{
+    background-color:#0d542b;
+    color: wheat;
+}
+
+.dark-theme .textColor {
+    color: wheat;
+}
+
+.dark-theme .searchButton {
+    background-color: wheat;
+    color: black;
+}
+
+.dark-theme .searchButton:hover {
+    background-color: beige;
+}

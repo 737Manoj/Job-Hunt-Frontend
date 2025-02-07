@@ -1,0 +1,27 @@
+.dark-theme .parentLogin {
+    background-color: black;
+}
+
+.dark-theme .loginCard{
+    background-color:#0d542b;
+    color: wheat;
+    margin-top: 50px;
+}
+
+.dark-theme .textColor {
+    color: wheat;
+}
+
+.dark-theme .loginField {
+    background-color: #f5deb3;
+    color: black;
+}
+
+.dark-theme .loginField:hover {
+    background-color: #f5f5dc;
+}
+
+.myClass {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}

@@ -1,0 +1,21 @@
+.dark-theme .parentCard {
+    background-color: black;
+}
+
+.dark-theme .applyCard{
+    background-color:#0d542b;
+    color: wheat;
+}
+
+.dark-theme .textColor {
+    color: wheat;
+}
+
+.dark-theme .submitField {
+    background-color: #f5deb3;
+    color: black;
+}
+
+.dark-theme .submitField:hover {
+    background-color: #f5f5dc;
+}
