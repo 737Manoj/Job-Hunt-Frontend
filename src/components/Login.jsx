@@ -20,7 +20,7 @@ const Login = () => {
         e.preventDefault();
         setErrorMessage("");
         try {
-            const response = await fetch(`${process.env.REACT_APP_BACKEND}/user/login`, {
+            const response = await fetch(`${import.meta.env.REACT_APP_BACKEND}/user/login`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ username, password })
@@ -36,6 +36,7 @@ const Login = () => {
                 setErrorMessage(errorData.message || 'Login failed');
             }
         } catch (error) {
+            console.log(error);
             setErrorMessage("An error occurred during login. Please try again after some time.")
         }
     };

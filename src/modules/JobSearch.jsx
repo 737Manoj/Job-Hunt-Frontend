@@ -18,7 +18,7 @@ const JobSearch = () => {
                 return;
             }
 
-            const response = await axios.get(`${process.env.REACT_APP_BACKEND}/jobs/search`, {
+            const response = await axios.get(`${import.meta.env.REACT_APP_BACKEND}/jobs/search`, {
                 params: { keyword },
                 headers: {
                     'Authorization': `Bearer ${token}` 
