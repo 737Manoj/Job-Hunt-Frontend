@@ -2,6 +2,8 @@ import React, { useState, useContext, useEffect } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import LoginAnimation from '../modules/LoginAnimation';
+import "../styles/Login.css";
+import LoadingAnimation from '../modules/LoadingAnimation';
 
 const Login = () => {
     const [username, setUsername] = useState('');
@@ -9,6 +11,7 @@ const Login = () => {
     const [errorMessage, setErrorMessage] = useState('');
     const { login } = useContext(AuthContext);
     const navigate = useNavigate();
+    const [isLoading, setIsLoading] = useState(false);
 
      useEffect(() => {
             setTimeout(() => {
@@ -19,6 +22,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setErrorMessage("");
+        setIsLoading(true);
         try {
             const response = await fetch(`${import.meta.env.VITE_BACKEND}/user/login`, {
                 method: 'POST',
@@ -37,13 +41,19 @@ const Login = () => {
             }
         } catch (error) {
             setErrorMessage("An error occurred during login. Please try again after some time.")
+        }finally{
+            setIsLoading(false);
         }
     };
 
     return (
         
-        <div className="h-[calc(100vh-96px)] parentLogin flex items-center justify-center bg-gray-100 overflow-auto ">
-        <div className=" loginCard left-35 bg-white p-10 rounded-lg shadow-lg shadow-gray-400 w-full max-w-sm relative max-h-full">
+        <div className="h-[calc(100vh-96px)] parentLogin flex items-center justify-center bg-gray-100 overflow-hidden ">
+            {isLoading && 
+             <div className="fixed top-0 left-0 w-full flex items-center justify-center bg-opacity-0 z-50">
+            <LoadingAnimation />
+            </div>}
+        <div className=" loginCard left-35 max-sm:left-22 bg-white p-10 rounded-lg shadow-lg shadow-gray-400 w-full max-w-sm relative max-h-full">
             <div className="absolute -top-25 left-1/4 transform -translate-x-1/8 bg-yellow-100 text-black py-2 px-4 rounded-lg shadow-lg shadow-gray-400 mt-0">
                 <p className="text-center">Please login to start your hunt</p>
             </div>

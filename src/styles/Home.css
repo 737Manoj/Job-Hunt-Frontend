@@ -2,6 +2,10 @@
   .dark-theme .parent-div {
     background-color: black;
   }
+
+  .dark-theme .ownTheme {
+    background-color: black;
+  }
   
 .dark-theme .cards {
     background-color: #0d542b;

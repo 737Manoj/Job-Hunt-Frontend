@@ -26,4 +26,23 @@
 }
 
 
+
+
+
+@media (max-width: 768px) { 
+    .parentRegister {
+      flex-direction: row; 
+      align-items: left;  
+      justify-content: left; 
+    }
+  
+    .registerCard {
+      width: 70%; 
+      left: 20;
+    }
+  
+    .animationSection {
+      width: 25%; 
+    }
+  }
   

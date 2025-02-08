@@ -12,6 +12,7 @@ import ProtectedRoutes from "./utils/ProtectedRoutes";
 import JobSearch from "./modules/JobSearch";
 import ErrorBoundary from "./utils/ErrorBoundary";
 import ThemeProvider from "./context/ThemeProvider";
+import HeaderMock from "./components/Header";
 
 
 

@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import "../styles/JobSearch.css";
+import LoadingAnimation from './LoadingAnimation';
 
 const JobSearch = () => {
     const [keyword, setKeyword] = useState('');
     const [results, setResults] = useState([]);
     const [error, setError] = useState('');
+    const [isLoading,setIsLoading] = useState(false);
 
     const handleSubmit = async (event) => {
         event.preventDefault();
+        isLoading(true);
         setError('');
 
         try {
@@ -27,11 +31,18 @@ const JobSearch = () => {
             setResults(response.data);
         } catch (error) {
             setError('Error fetching search results');
+        }finally{
+            isLoading(false);
         }
     };
 
     return (
         <div className=" parentCard flex flex-col items-center justify-center bg-gray-100 py-6">
+            {isLoading &&
+            <div className="fixed top-0 left-0 w-full flex items-center justify-center bg-opacity-0 z-50">
+                <LoadingAnimation />
+            </div>
+            }
         <div className=" searchCard bg-white p-6 rounded-lg shadow-lg shadow-gray-400 w-full max-w-3xl">
             <h2 className="text-2xl font-bold text-center mb-4">Job Search</h2>
             <form onSubmit={handleSubmit} className="mb-4">
