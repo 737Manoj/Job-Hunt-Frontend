@@ -61,7 +61,8 @@ const Jobs = () => {
 
 function SkeletonJobCard() {
     return (
-        <li className="bg-gray-100 shadow-lg shadow-gray-400 rounded-lg overflow-hidden">
+        
+        <li className="bg-green-900 shadow-lg shadow-gray-400 rounded-lg overflow-hidden">
             <div className="p-6 animate-pulse">
                 <div className="h-6 bg-gray-700 rounded w-3/4"></div>
                 <div className="h-4 bg-gray-700 rounded mt-4 w-1/2"></div>
@@ -69,6 +70,7 @@ function SkeletonJobCard() {
                 <div className="h-10 bg-yellow-100 rounded mt-4 w-full"></div>
             </div>
         </li>
+        
     );
 }
 

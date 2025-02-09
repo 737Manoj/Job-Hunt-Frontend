@@ -46,7 +46,7 @@ const JobSearch = () => {
         <div className=" searchCard bg-white p-6 rounded-lg shadow-lg shadow-gray-400 w-full max-w-3xl">
             <h2 className="text-2xl font-bold text-center mb-4">Job Search</h2>
             <form onSubmit={handleSubmit} className="mb-4">
-                <div className="flex items-center">
+                <div className="flex flex-wrap items-center">
                     <label htmlFor="keyword" className=" textColor block text-gray-700 font-semibold mr-4">Keyword:</label>
                     <input
                         type="text"
