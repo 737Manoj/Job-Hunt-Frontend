@@ -40,6 +40,7 @@ const Login = () => {
                 setErrorMessage(errorData.message || 'Login failed');
             }
         } catch (error) {
+            alert(error);
             setErrorMessage("An error occurred during login. Please try again after some time.")
         }finally{
             setIsLoading(false);

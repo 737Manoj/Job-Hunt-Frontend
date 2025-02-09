@@ -44,6 +44,10 @@
  
   
   @media (min-width: 768px) {
+
+    .logo {
+      display: block;
+    }
     
     .mobile-menu-button {
       display: none; 

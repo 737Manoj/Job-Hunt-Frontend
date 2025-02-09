@@ -21,10 +21,10 @@ const Header = () => {
 
     return (
         <header className="bg-green-900 p-6 sticky top-0 left-0 w-full z-10">
-            <div className="container mx-auto flex justify-between items-center">
+            <div className="container mx-auto flex justify-between items-center max-sm:flex gap-x-16">
                 
                 {/* Logo */}
-                <h1 className="text-yellow-100 text-2xl font-semibold">Job Hunt</h1>
+                <h1 className=" text-yellow-100 text-2xl font-semibold logo ">Job<br />Hunt</h1>
 
                 {/* Mobile Menu Button */}
                 <button className="mobile-menu-button md:hidden" onClick={() => setIsOpen(!isOpen)}>
