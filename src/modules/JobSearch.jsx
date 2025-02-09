@@ -12,7 +12,7 @@ const JobSearch = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        isLoading(true);
+        setIsLoading(true);
         setError('');
 
         try {
@@ -32,7 +32,7 @@ const JobSearch = () => {
         } catch (error) {
             setError('Error fetching search results');
         }finally{
-            isLoading(false);
+            setisLoading(false);
         }
     };
 
