@@ -32,7 +32,7 @@ const JobSearch = () => {
         } catch (error) {
             setError('Error fetching search results');
         }finally{
-            setisLoading(false);
+            setIsLoading(false);
         }
     };
 
